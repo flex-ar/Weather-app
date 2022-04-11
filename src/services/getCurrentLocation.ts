@@ -4,10 +4,10 @@ import { Location, EndpointLocation } from './interfaces.services';
 export const getCurrentLocation = async(): Promise<Location> => {
   try {
     // import module
-    const { getCurrentPosition } = await import('../helpers/getCurrentPosition');
-  
-    // get data
+    const { getCurrentPosition } = await import('../helpers');
     const { latitude, longitude } = await getCurrentPosition();
+
+    // get data
     const response = await fetch(`${URLs.LATTLONG}${latitude},${longitude}`);
     const closestLocations: EndpointLocation[] = await response.json();
 
@@ -19,6 +19,6 @@ export const getCurrentLocation = async(): Promise<Location> => {
 
   } catch (error) {
     console.error(error);
-    throw new Error('Error al obtener el WOEID de la posicion actual');
+    throw Error('Error al obtener el WOEID de la posicion actual');
   };
 };
