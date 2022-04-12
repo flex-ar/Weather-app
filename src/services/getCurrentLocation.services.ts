@@ -1,5 +1,5 @@
 import { URLs } from './URLs.services';
-import { Location, EndpointLocation } from './interfaces.services';
+import { Location, EndpointLocation } from '../models';
 
 export const getCurrentLocation = async(): Promise<Location> => {
   try {

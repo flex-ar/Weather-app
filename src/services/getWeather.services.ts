@@ -1,4 +1,4 @@
-import { EndpointWeather, Weather } from './interfaces.services';
+import { EndpointWeather, Weather } from '../models';
 
 export const getWeather = async(locationId: number): Promise<Weather> => {
   try {

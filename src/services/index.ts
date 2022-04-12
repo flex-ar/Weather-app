@@ -1,3 +1,3 @@
-export * from './getCurrentLocation';
-export * from './getLocations';
-export * from './getWeather';
+export * from './getCurrentLocation.services';
+export * from './getLocations.services';
+export * from './getWeather.services';

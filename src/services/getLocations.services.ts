@@ -1,4 +1,4 @@
-import { EndpointLocation, Location } from './interfaces.services';
+import { EndpointLocation, Location } from '../models';
 
 export const getLocations = async(query: string): Promise<Location[]> => {
   try {
