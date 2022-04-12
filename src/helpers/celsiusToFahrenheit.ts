@@ -1,4 +1,4 @@
-import { Temp } from '../services/interfaces.services';
+import { Temp } from '../models';
 
 export const celsiusToFahrenheit = (temp: number): Temp => ({
   celsius: Math.round(temp),
