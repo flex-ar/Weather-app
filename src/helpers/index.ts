@@ -1,3 +1,3 @@
-export * from './formatDate';
-export * from './getCurrentPosition';
-export * from './celsiusToFahrenheit';
+export * from './formatDate.helper';
+export * from './getCurrentPosition.helper';
+export * from './celsiusToFahrenheit.helper';
