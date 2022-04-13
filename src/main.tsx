@@ -1,14 +1,16 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 
 import { WeatherApp } from './WeatherApp';
 
-ReactDOM.render(
-  <React.StrictMode>
+const container = document.getElementById('root') ?? new Element;
+const root = createRoot(container);
+
+root.render(
+  <StrictMode>
     <ChakraProvider>
       <WeatherApp />
     </ChakraProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </StrictMode>
 );
