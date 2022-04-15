@@ -25,7 +25,7 @@ export interface EndpointWeather {
   title: string
 };
 
-interface WeatherDay {
+export interface WeatherDay {
   weather_state_name: string
   weather_state_abbr: string
   created: string
