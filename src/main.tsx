@@ -1,6 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { theme } from './theme';
 
 import { WeatherApp } from './WeatherApp';
 
@@ -9,7 +10,7 @@ const root = createRoot(container);
 
 root.render(
   <StrictMode>
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <WeatherApp />
     </ChakraProvider>
   </StrictMode>
