@@ -12,6 +12,6 @@ export const useLocations = (query: string) => {
       .catch( console.error );
   }, []);
 
-  return { locations }
+  return { locations };
 
 };
