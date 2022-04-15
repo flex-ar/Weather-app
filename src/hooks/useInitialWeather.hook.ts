@@ -4,7 +4,7 @@ import { getCurrentLocation, getWeather } from '../services';
 
 export const useInitialWeather = () => {
 
-  const [weather, setWeather] = useState({} as Weather);
+  const [weatherState, setWeatherState] = useState({} as Weather);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -12,14 +12,14 @@ export const useInitialWeather = () => {
       .then(async({ location_id }) => await getWeather( location_id ))
       .then(weather => {
         setIsLoading(false);
-        setWeather(weather);
+        setWeatherState(weather);
       })
       .catch( console.error );
   }, []);
 
   return {
-    weather,
-    setWeather,
+    weatherState,
+    setWeatherState,
     isLoading
   };
 
