@@ -28,7 +28,7 @@ export const getWeather = async(locationId: number): Promise<Weather> => {
         wind_direction_compass: day.wind_direction_compass,
         air_pressure: Math.round(day.air_pressure),
         humidity: Math.round(day.humidity),
-        visibility: Math.round(day.visibility),
+        visibility: +(day.visibility.toFixed(1)),
         predictability: Math.round(day.predictability),
       })),
       time: formatDate_dddDMMM(weather.time),
