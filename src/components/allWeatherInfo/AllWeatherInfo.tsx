@@ -10,9 +10,11 @@ export const AllWeatherInfo = () => {
       centerContent
       color="text.1"
       fontFamily="Raleway"
-      maxW="100%"
-      overflow="auto"
+      maxW={["100%", "100%", "70%"]}
+      overflow={["visible", "visible", "auto"]}
       px="100px"
+      pb="24px"
+      zIndex={1}
     >
       <Box>
         <ChangeTempDisplay />

@@ -20,7 +20,8 @@ export const useInitialWeather = () => {
   return {
     weatherState,
     setWeatherState,
-    isLoading
+    isLoading,
+    setIsLoading
   };
 
 };

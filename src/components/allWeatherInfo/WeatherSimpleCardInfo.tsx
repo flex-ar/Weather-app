@@ -15,7 +15,7 @@ export const WeatherSimpleCardInfo = ({ title, isLoadig, data, unity }: Prop) =>
       flexDir="column"
       h="159px"
       justifyContent="space-evenly"
-      w="384px"
+      w={["328px","384px"]}
     >{
       isLoadig
       ? 

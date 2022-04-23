@@ -47,4 +47,5 @@ export interface Weather {
   time: string
   sun_rise: string
   sun_set: string
+  city: string
 };

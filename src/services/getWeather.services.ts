@@ -34,6 +34,7 @@ export const getWeather = async(locationId: number): Promise<Weather> => {
       time: formatDate_dddDMMM(weather.time),
       sun_rise: formatDate_dddDMMM(weather.sun_rise),
       sun_set: formatDate_dddDMMM(weather.sun_set),
+      city: weather.title
     };
   } catch (error) {
     console.error(error);

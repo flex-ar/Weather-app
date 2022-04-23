@@ -6,7 +6,9 @@ export const WeatherContext = createContext({
   isLoading: true,
   displayTemp: 'celsius',
   setWeatherState: (weatherState: Weather): void => {},
-  setDisplayTemp: (displayTemp: string): void => {}
+  setIsLoading: (isLoading: boolean): void => {},
+  setDisplayTemp: (displayTemp: string): void => {},
+  setSearch: (search: boolean): void => {},
 });
 
 export const useWeatherContext = () => useContext(WeatherContext);

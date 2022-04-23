@@ -14,6 +14,7 @@ export const WeatherCardsContainer = () => {
   return (
     <Wrap
       justify="center"
+      mt="52px"
       spacing="26px"
     >
       <WrapItem

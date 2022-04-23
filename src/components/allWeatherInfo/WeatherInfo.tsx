@@ -27,12 +27,12 @@ export const WeatherInfo = () => {
           flexDir="column"
           h="204px"
           justifyContent="space-evenly"
-          w="384px"
+          w={["328px","384px"]}
         >
           {
             isLoading
             ? <Spinner size="xl"/>
-            : (<>
+            : <>
               <Text>Wind status</Text>
               <Flex align="center">
                 <Text
@@ -54,7 +54,7 @@ export const WeatherInfo = () => {
                 <Icon me="15px"/>
                 <Text>{wind_direction_compass}</Text>
               </Flex>
-            </>)
+            </>
           }
         </WrapItem>
         <WrapItem
@@ -63,7 +63,7 @@ export const WeatherInfo = () => {
           flexDir="column"
           h="204px"
           justifyContent="space-evenly"
-          w="384px"
+          w={["328px","384px"]}
         >
           {
             isLoading
